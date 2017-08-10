@@ -1,0 +1,76 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+}
+
+.jumbotron{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+#player-container{
+  margin-left: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+#search-box{
+  margin-left: 50px;
+}
+
+#entry{
+  width: 20%;
+}
+
+#results-container{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.song-row{
+  height: 250px;
+  background-color: #f1f1f1;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: inset 0 0 8px #000000;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 2px; 
+}
+
+img {
+  width: 110px;
+  height: 110px;
+  margin-top: 10px;
+}
+
+.track{
+  font-size: 18px;
+}
+
+.album{
+  font-size: 12px;
+}
+
+.artist{
+  font-size: 14px;
+}
+
+.track, .album, .artist{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 3px;
+}
