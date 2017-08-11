@@ -1,76 +1,136 @@
-
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #333;
 }
 
-.jumbotron{
+.jumbotron {
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 65px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: inset 0 11px 8px -6px #777, inset 0 -11px 8px -6px #777;
 }
 
-#player-container{
+#glyph {
+  font-size: 48px;
+  margin-left: 10px;
+  text-shadow: 0 3px 0 #b2a98f, 0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1);
+}
+
+#jams {
+  width: 60%;
+}
+
+#player-container {
   margin-left: 50px;
   text-align: center;
   width: 100%;
   margin: 0;
 }
 
-#search-box{
-  margin-left: 50px;
+#current {
+  color: #fff;
+  margin-left: 270px;
 }
 
-#entry{
-  width: 20%;
+.hr-style {
+  //hr style from https://codepen.io/ibrahimjabbari/pen/ozinB
+  border-top: 1px dashed #8c8b8b;
 }
 
-#results-container{
+.hr-style:after {
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 40px;
+  padding: 0 3px;
+  background: #333;
+  color: #f0f0f0;
+  font-size: 18px;
+}
+
+#search-box {
+  text-align: center;
+}
+
+#entry {
+  width: 30%;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+#submit-button {
+  width: 10%;
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#snip {
+  margin-left: 5px;
+}
+
+#results-container {
   text-align: center;
   margin-top: 30px;
 }
 
-.song-row{
+.song-row {
   height: 250px;
   background-color: #f1f1f1;
   margin-bottom: 15px;
   padding: 10px;
   box-shadow: inset 0 0 8px #000000;
   font-family: 'Open Sans', sans-serif;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 img {
   width: 110px;
   height: 110px;
   margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
-.track{
+.track {
   font-size: 18px;
 }
 
-.album{
+.album {
   font-size: 12px;
 }
 
-.artist{
+.artist {
   font-size: 14px;
 }
 
-.track, .album, .artist{
+.album,
+.artist,
+.track {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   padding-bottom: 3px;
+}
+
+.foot {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 0 3px 0 #b2a98f, 0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1);
 }
