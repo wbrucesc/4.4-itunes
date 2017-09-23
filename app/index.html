@@ -1,51 +1,58 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>4 4 itunes</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
 
-    <header>
-    <h1 class="jumbotron">Snip Music Player <span id="glyph" class="glyphicon glyphicon-scissors"></span></h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>4 4 itunes</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC|Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.css">
+</head>
 
-    </header>
+<body>
 
-    <section id="player-container" class="content-player">
-      <audio id="jams" class="music-player" controls="controls" src="#"></audio>
-    </section>
-    <p id="current">Now Playing : Select song to play</p>
-    <hr class="hr-style">
+  <header>
+    <h1 class="jumbotron">Snip Music Player <span class="fa fa-scissors"></span></h1>
 
-    <section class="search">
-      <form id="search-box" class="search-form">
-        <input id="entry" type="text" placeholder="Search for Artist">
-        <button id ="submit-button" type="submit">Snip it! <span id="snip" class="glyphicon glyphicon-scissors"></span></button>
-      </form>
-    </section>
+  </header>
 
-    <section id="results-container" class="container">
-            <!--Handlebars template goes here-->
-    </section>
+  <section id="player-container" class="content-player">
+    <audio id="jams" class="music-player" controls="controls" src="#"></audio>
+  </section>
+  <p id="current">Now Playing : Select song to play</p>
+  <hr class="hr-style">
+
+  <section class="search">
+    <form id="search-box" class="search-form">
+      <input id="entry" type="text" placeholder="Search for Artist">
+      <button id="submit-button" type="submit">Snip it! <span id="snip" class="glyphicon glyphicon-scissors"></span></button>
+    </form>
+  </section>
+
+  <section id="results-container" class="container">
+    <!--Handlebars template goes here-->
+  </section>
 
   </div>
-          <!-- handlebars template -->
-    <script id="results-template" type="text/x-handlebars-template">
-      <div class="col-md-3">
-        <div class="song-row">
-          <img class="art"src="{{artworkUrl100}}" alt="album artwork">        <!--{{artworkUrl100}}-->
-          <h3 class="track">{{trackName}}</h3>                                  <!--{{trackName}}-->
-          <h4 class="album">{{collectionName}}</h4>                           <!--{{collectionName}}-->
-          <h2 class="artist">{{artistName}}</h2>
-        </div>
+  <!-- handlebars template -->
+  <script id="results-template" type="text/x-handlebars-template">
+    <div class="col-md-3">
+      <div class="song-row">
+        <img class="art" src="{{artworkUrl100}}" alt="album artwork">
+        <!--{{artworkUrl100}}-->
+        <h3 class="track">{{trackName}}</h3>
+        <!--{{trackName}}-->
+        <h4 class="album">{{collectionName}}</h4>
+        <!--{{collectionName}}-->
+        <h2 class="artist">{{artistName}}</h2>
       </div>
-    </script>
+    </div>
+  </script>
 
-    <footer class="foot"><span id="logo-end" class="glyphicon glyphicon-scissors"></span></footer>
+  <footer class="foot"><span class="fa fa-scissors"></span></footer>
 
-    <script src="js/bundle.js"></script>
-  </body>
+  <script src="js/bundle.js"></script>
+</body>
+
 </html>
